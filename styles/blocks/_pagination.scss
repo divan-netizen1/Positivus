@@ -1,0 +1,19 @@
+.pagination {
+  &__list {
+    display: flex;
+    column-gap: 20px;
+  }
+  &__button {
+    @include reset-button;
+    @include flex-center;
+    @include square(24px);
+    color: var(--color-light);
+
+@include hover {
+color: var(--color-green);}
+
+    &.is-current {
+      color: var(--color-green);
+    }
+  }
+}
